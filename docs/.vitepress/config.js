@@ -32,7 +32,7 @@ const navList = [
 ];
 module.exports = {
   title: "whyweplay",
-  base: "./",
+  base: "/blog-whyweplay",
   description: "Just playing around.",
   themeConfig: {
     nav: navList,
