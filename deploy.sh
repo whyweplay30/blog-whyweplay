@@ -15,10 +15,10 @@ git add .
 git commit -m 'deploy'
 
 # 部署到 https://<username>.github.io/<repo>
-git push -f git@github.com:whyweplay30/blog-whyweplay.git master:github-pages
+git push -f https://github.com/whyweplay30/blog-whyweplay.git master:github-pages
 
 # 提交所有代码到github
 cd ../../../
 git add .
-git cm -m 'update'
+git commit -m 'update'
 git push
