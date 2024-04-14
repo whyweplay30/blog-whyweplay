@@ -32,7 +32,7 @@ const navList = [
 ];
 module.exports = {
   title: "whyweplay",
-  base: "/home",
+  base: "/",
   description: "Just playing around.",
   themeConfig: {
     nav: navList,
