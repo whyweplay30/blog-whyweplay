@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.Q7NN9khY.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/移动端/H5移动端下载.md","filePath":"pages/移动端/H5移动端下载.md"}'),s={name:"pages/移动端/H5移动端下载.md"};function r(o,_,c,n,p,d){return a(),t("div")}const f=e(s,[["render",r]]);export{m as __pageData,f as default};
