@@ -10,7 +10,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "docs:deploy": "sh deploy.sh"
   },
-  "author": "whyweplay",
+  "author": "why we play",
   "license": "ISC",
   "devDependencies": {
     "sass": "^1.75.0",
