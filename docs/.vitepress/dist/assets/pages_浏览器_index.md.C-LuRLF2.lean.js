@@ -1,0 +1,1 @@
+import{_ as e,c as t,o as a}from"./chunks/framework.Q7NN9khY.js";const m=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"pages/浏览器/index.md","filePath":"pages/浏览器/index.md","lastUpdated":1713708813000}'),s={name:"pages/浏览器/index.md"};function n(r,o,d,c,p,i){return a(),t("div")}const f=e(s,[["render",n]]);export{m as __pageData,f as default};

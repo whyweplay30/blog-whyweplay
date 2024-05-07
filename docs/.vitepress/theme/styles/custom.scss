@@ -11,53 +11,69 @@
 **/
 
 .VPHomeHero{
-    background-image: url("../../../public/images/bg.JPG");
-    background-size: fit;
+    background-image: url("../../../public/images/bg.jpg");
+    background-size: cover;
+    margin-bottom: 20px;
 }
-.VPNav {
-    .VPNavBar {
-      background-color: #fff;
-      border-bottom: 1px solid rgba(60, 60, 67, 0.13);
-    }
-    .VPNavBar.has-sidebar{
-      .curtain {
-        bottom: -30px !important;
-        /* 导航的底部边框不显示问题修改 */
-        &::before {
-          margin-top: 2px !important;
-        }
-      }
-    }
-    .logo {
-      height: 40px;
-    }
-  }
+// .VPNav {
+//     .VPNavBar {
+//       background-color: #fff;
+//       border-bottom: 1px solid rgba(60, 60, 67, 0.13);
+//     }
+//     .VPNavBar.has-sidebar{
+//       .curtain {
+//         bottom: -30px !important;
+//         /* 导航的底部边框不显示问题修改 */
+//         &::before {
+//           margin-top: 2px !important;
+//         }
+//       }
+//     }
+//     .logo {
+//       height: 40px;
+//     }
+//   }
    
   /**
     内容模块样式修改
   **/
    
-  .VPContent {
-    .VPDoc {
-      padding-left: 0 !important;
-    }
-    /* 内容左边距调整 */
-    .content-container {
-      margin-left: 20px !important;
-    }
-    /* 副标题样式修改 */
-    .container .text {
-      font-size: 46px !important;
-    }
-  }
+  // .VPContent {
+  //   .VPDoc {
+  //     padding-left: 0 !important;
+  //   }
+  //   /* 内容左边距调整 */
+  //   .content-container {
+  //     margin-left: 20px !important;
+  //   }
+  //   /* 副标题样式修改 */
+  //   .container .text {
+  //     font-size: 46px !important;
+  //   }
+  // }
    
    
   /**
     暗黑模式样式修改
   **/
-  .dark {
-    .VPNav .VPNavBar {
-      background-color: #1e1e20;
-      border-bottom: 1px solid #000;
-    }
+  // .dark {
+  //   .VPNav .VPNavBar {
+  //     background-color: #1e1e20;
+  //     border-bottom: 1px solid #000;
+  //   }
+  // }
+
+  /**
+    代码块颜色修改
+  **/
+  /* 在你的VitePress项目中的一个CSS文件中 */
+/* 在你的VitePress项目中的一个CSS文件中 */
+
+/* 在你的VitePress项目中的一个CSS文件中 */
+html:not(.dark) {
+  .vp-doc div[class*='language-'], .vp-block{
+    background-color: #eef8fa; /* 更深的颜色 */
+    color: #5a5a5a; /* 代码文本颜色 */
+    border-color: #2c313c; /* 边框颜色 */
   }
+}

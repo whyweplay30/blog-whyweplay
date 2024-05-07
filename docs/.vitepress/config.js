@@ -1,52 +1,37 @@
-const fs = require("fs");
-const path = require("path");
+import config from "./theme/util.js";
 
-const getNavList = function (filePath) {
-  const list = [];
-  // 同步读取目录
-  const files = fs.readdirSync(filePath);
-  files.forEach((file) => {
-    const curFilePath = path.join(filePath, file);
-    const stats = fs.statSync(curFilePath);
-    let item = null;
-    if (stats.isFile()) {
-      item = {
-        text: file.split(".")[0],
-        link: filePath.replace("./docs", "") + "/"+file,
-      };
-    } else {
-      item = {
-        text: file,
-        items: getNavList(filePath + "/" + file),
-      };
-    }
-    console.log(JSON.stringify(item));
-    list.push(item);
-  });
-  return list;
-};
-console.log(getNavList("./docs/pages"));
-const navList = [
-  
-  ...getNavList("./docs/pages"),
-];
 module.exports = {
-  title: "whyweplay",
+  lastUpdated: true,
+  title: "why we play",
   base: "/blog-whyweplay",
   description: "Just playing around.",
   themeConfig: {
-    nav: navList,
-    sidebar: {
-      // "/pages/CSS": [
-      //   {
-      //     text: "CSS文章目录",
-      //     items: [
-      //       { text: "盒模型", link: "/pages/CSS/pages/盒模型.md" },
-      //       // { text: "JavaScript", link: "/pages/JavaScript" },
-      //     ],
-      //   },
-      //   { text: "CSS", item: [] },
-      // ],
+    nav: config.navList,
+    sidebar: config.sidebarLsit,
+    outline: {
+      label: "页面导航",
     },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        dateStyle: 'short',
+        timeStyle: 'medium'
+      }
+    },
+    footer: {
+      message: '个人博客',
+      copyright: `2023-${new Date().getFullYear()} why we play`
+    },
+    langMenuLabel: '多语言',
+    returnToTopLabel: '回到顶部',
+    sidebarMenuLabel: '菜单',
+    darkModeSwitchLabel: '主题',
+    lightModeSwitchTitle: '切换到浅色模式',
+    darkModeSwitchTitle: '切换到深色模式'
   },
+  
 };
